@@ -5,9 +5,10 @@
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
-  "start": "node dist/index.js"
-}
-,
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "deploy-commands": "npm run build && node dist/command.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VrundKasodariya/Discord-Bot.git"
